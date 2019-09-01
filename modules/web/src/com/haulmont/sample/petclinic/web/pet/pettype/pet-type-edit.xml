@@ -19,6 +19,8 @@
         <form id="fieldGroup" dataContainer="petTypeCt">
             <column width="250px">
                 <textField property="name"/>
+                <textField property="propertiesEntityName"/>
+                <textField property="propertiesFragment"/>
             </column>
         </form>
 

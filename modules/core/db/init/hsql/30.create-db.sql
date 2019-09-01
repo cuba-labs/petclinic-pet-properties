@@ -1,4 +1,3 @@
-
 ----------------------------------------------------------------------------------------------------
 -- Vets
 ----------------------------------------------------------------------------------------------------
@@ -55,9 +54,6 @@ insert into PETCLINIC_PET_TYPE
 values ('1728d1fc-243e-0cd4-08d3-717ea8a48e12', 1, '2018-11-05 17:26:24', 'admin', '2018-11-05 17:26:24', null, null, null, 'Ice');
 insert into PETCLINIC_PET_TYPE
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME)
-values ('1e2abb1f-5f77-865e-17fa-b67e85497523', 1, '2018-11-05 17:26:04', 'admin', '2018-11-05 17:26:04', null, null, null, 'Water');
-insert into PETCLINIC_PET_TYPE
-(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME)
 values ('2dd34e45-8086-815b-51f9-491d9e8c2cab', 1, '2018-11-05 17:27:33', 'admin', '2018-11-05 17:27:33', null, null, null, 'Dragon');
 insert into PETCLINIC_PET_TYPE
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME)
@@ -97,11 +93,16 @@ insert into PETCLINIC_PET_TYPE
 values ('ecde1aab-9cd1-5b7a-77e0-51a281e997d0', 1, '2018-11-05 17:26:18', 'admin', '2018-11-05 17:26:18', null, null, null, 'Grass');
 insert into PETCLINIC_PET_TYPE
 (ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME)
-values ('f3520ed7-47a0-b8a4-722c-41c3eeb663b4', 1, '2018-11-05 17:27:01', 'admin', '2018-11-05 17:27:01', null, null, null, 'Flying');
-insert into PETCLINIC_PET_TYPE
-(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME)
 values ('fec71826-2cac-6a2a-0960-acc63637d301', 1, '2018-11-05 17:26:41', 'admin', '2018-11-05 17:26:41', null, null, null, 'Fighting');
 
+insert into PETCLINIC_PET_TYPE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, PROPERTIES_ENTITY_NAME, PROPERTIES_FRAGMENT)
+values ('f3520ed7-47a0-b8a4-722c-41c3eeb663b4', 1, '2018-11-05 17:27:01', 'admin', '2018-11-05 17:27:01', null, null, null, 'Flying',
+    'petclinic_FlyingProperties', 'petclinic_FlyingPropertiesFragment');
+insert into PETCLINIC_PET_TYPE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, PROPERTIES_ENTITY_NAME, PROPERTIES_FRAGMENT)
+values ('1e2abb1f-5f77-865e-17fa-b67e85497523', 1, '2018-11-05 17:26:04', 'admin', '2018-11-05 17:26:04', null, null, null, 'Water',
+    'petclinic_WaterProperties', 'petclinic_WaterPropertiesFragment');
 
 
 ----------------------------------------------------------------------------------------------------

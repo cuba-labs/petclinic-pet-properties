@@ -36,11 +36,12 @@
                 <textField property="name"/>
                 <textField property="identificationNumber"/>
                 <dateField property="birthDate"/>
-                <lookupPickerField property="type" optionsContainer="typesDc"/>
+                <lookupPickerField id="typeField" property="type" optionsContainer="typesDc"/>
                 <lookupPickerField property="owner" optionsContainer="ownersDc"/>
             </column>
         </form>
 
+        <groupBox id="propertiesBox" caption="Properties"/>
 
         <hbox id="editActions" spacing="true">
             <button action="windowCommitAndClose"/>

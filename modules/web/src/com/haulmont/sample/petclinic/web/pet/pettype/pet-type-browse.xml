@@ -34,6 +34,8 @@
             </actions>
             <columns>
                 <column id="name"/>
+                <column id="propertiesEntityName"/>
+                <column id="propertiesFragment"/>
             </columns>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"

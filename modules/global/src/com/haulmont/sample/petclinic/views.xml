@@ -21,9 +21,8 @@
     <view class="com.haulmont.sample.petclinic.entity.pet.Pet"
           extends="_local"
           name="pet-with-owner-and-type">
-        <property name="type"
-                  view="_minimal"/>
-        <property name="owner"
-                  view="_local"/>
+        <property name="type" view="_local"/>
+        <property name="owner" view="_local"/>
+        <property name="properties" view="_minimal"/>
     </view>
 </views>

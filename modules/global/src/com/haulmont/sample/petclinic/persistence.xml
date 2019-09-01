@@ -9,5 +9,8 @@
         <class>com.haulmont.sample.petclinic.entity.vet.Vet</class>
         <class>com.haulmont.sample.petclinic.entity.vet.Specialty</class>
         <class>com.haulmont.sample.petclinic.entity.visit.Visit</class>
+        <class>com.haulmont.sample.petclinic.entity.pet.PetProperties</class>
+        <class>com.haulmont.sample.petclinic.entity.pet.FlyingProperties</class>
+        <class>com.haulmont.sample.petclinic.entity.pet.WaterProperties</class>
     </persistence-unit>
 </persistence>

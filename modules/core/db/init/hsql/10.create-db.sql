@@ -14,6 +14,7 @@ create table PETCLINIC_PET (
     BIRTH_DATE date,
     TYPE_ID varchar(36),
     OWNER_ID varchar(36),
+    PROPERTIES_ID varchar(36),
     --
     primary key (ID)
 )^
@@ -29,6 +30,9 @@ create table PETCLINIC_PET_TYPE (
     DELETE_TS timestamp,
     DELETED_BY varchar(50),
     NAME varchar(255),
+    --
+    PROPERTIES_ENTITY_NAME varchar(255),
+    PROPERTIES_FRAGMENT varchar(255),
     --
     primary key (ID)
 )^
@@ -110,3 +114,37 @@ create table PETCLINIC_VET_SPECIALTY_LINK (
     primary key (VET_ID, SPECIALTY_ID)
 )^
 -- end PETCLINIC_VET_SPECIALTY_LINK
+-- begin PETCLINIC_PET_PROPERTIES
+create table PETCLINIC_PET_PROPERTIES (
+    ID varchar(36) not null,
+    VERSION integer not null,
+    CREATE_TS timestamp,
+    CREATED_BY varchar(50),
+    UPDATE_TS timestamp,
+    UPDATED_BY varchar(50),
+    DELETE_TS timestamp,
+    DELETED_BY varchar(50),
+    DTYPE varchar(31),
+    --
+    primary key (ID)
+)^
+-- end PETCLINIC_PET_PROPERTIES
+
+-- begin PETCLINIC_FLYING_PROPERTIES
+create table PETCLINIC_FLYING_PROPERTIES (
+    ID varchar(36) not null,
+    --
+    WING_WIDTH double precision,
+    --
+    primary key (ID)
+)^
+-- end PETCLINIC_FLYING_PROPERTIES
+-- begin PETCLINIC_WATER_PROPERTIES
+create table PETCLINIC_WATER_PROPERTIES (
+    ID varchar(36) not null,
+    --
+    MAX_DEPTH double precision,
+    --
+    primary key (ID)
+)^
+-- end PETCLINIC_WATER_PROPERTIES
